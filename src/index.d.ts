@@ -5,6 +5,7 @@ type json = {} | { [key: string]: any };
 
 interface GroupBase {
   transform?: (outputJson: json) => json;
+  transformFile?: (path: string, fileJson: json) => json;
   to: string;
 }
 
