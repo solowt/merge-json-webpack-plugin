@@ -79,7 +79,7 @@ class MergeJsonPlugin {
 
         logger.debug('File read successfully:', filePath);
         const json = JSON.parse(jsonStr);
-        return typeof transformFile === 'function' ? transform(filePath, json) : json;
+        return typeof transformFile === 'function' ? transformFile(filePath, json) : json;
       });
 
       const f = await Promise.all(filesPromises);
