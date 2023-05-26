@@ -19,8 +19,7 @@
   "scripts": {
     "prepublishOnly": "npm run test",
     "lint": "eslint . --ignore-path .gitignore",
-    "test": "jest",
-    "prepare": "sh ./scripts/install-husky.sh"
+    "test": "jest"
   },
   "keywords": [
     "json-merge",
